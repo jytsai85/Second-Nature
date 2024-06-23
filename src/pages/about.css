@@ -1,0 +1,157 @@
+.about-container {
+    position: relative;
+    text-align: center;
+    min-height: 150vh;
+}
+
+img#banner-art {
+    object-fit: cover;
+}
+
+.banner {
+    width: 100%;
+    height: 70vh;
+    position: relative;
+    text-align: center;
+}
+
+.title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    width: 60%;
+    font-size: 125pt;
+    font-family: 'AvenirNext-Light';
+    text-shadow: 0px 3px 4px rgba(57, 74, 53, 0.8);
+}
+
+img.N {
+    width: 45%;
+    height: auto;
+    filter: drop-shadow(0px 3px 4px rgba(57, 74, 53, 0.8));
+    pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    img.N {
+        animation: Logo-rotate infinite 20s linear;
+    }
+}
+
+@keyframes Logo-rotate {
+    0% {
+        transform: rotateY(0deg);
+    }
+
+    20% {
+        transform: rotateY(-180deg);
+    }
+
+    40% {
+        transform: rotateY(0deg);
+    }
+
+    60% {
+        transform: rotateY(180deg);
+    }
+
+    80% {
+        transform: rotateY(0deg);
+    }
+}
+
+span.decorative-type {
+    font-family: 'AvenirNextCondensed-Regular';
+    margin-left: -14vh;
+}
+
+.description {
+    width: 100%;
+    text-align: left;
+    position: relative;
+    font-family: 'Karla', sans-serif;
+}
+
+.description.quote {
+    width: 60%;
+    margin-top: 10vh;
+    margin-left: 20%;
+    font-size: 16pt;
+    font-family: 'Alice-Regular';
+    color: #c3c3c3;
+}
+
+.description.read-more {
+    width: 60%;
+    margin-top: 10vh;
+    margin-left: 20%;
+    font-family: 'Alice-Regular';
+}
+
+span.quote {
+    color: #000000;
+}
+
+span.blockquote {
+    color: #ffffff;
+
+}
+
+.blockquoteWithStyle {
+    background-color: rgb(238, 204, 202);
+    border-radius: 10px;
+    margin-top: 10vh;
+    height: 10vh;
+    box-shadow: 20px 12px 2px 1px rgb(0, 222, 234, 0.8);
+    font-style: italic;
+    font-weight: bolder;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.blockquote-icon {
+    background-color: rgba(2, 208, 150, 1);
+    width: 50px;
+    height: 50px;
+    z-index: 1;
+    top: 62%;
+    left: 3%;
+    position: absolute;
+    border-radius: 50%;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Libre Baskerville', serif;
+
+}
+
+@media screen and (max-width: 400px) {}
+
+@media screen and (min-width: 400px) and (max-width: 920px) {
+    .title {
+        font-size: 80pt;
+    }
+
+    img.N {
+        margin-left: -20px;
+    }
+
+    span.decorative-type {
+        margin-left: -8vh;
+    }
+
+    .blockquote-icon {
+        top: 72%;
+    }
+
+    span.blockquote {
+        margin: auto 40px auto 40px;
+    }
+}
+
+@media screen and (min-width: 920px) and (max-width: 1400px) {}

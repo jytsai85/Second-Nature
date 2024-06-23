@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'AvenirNext-Light';
+    src: url('./AvenirNext-Light.ttf') format('truetype');
+    font-weight: inherit;
+    font-style: inherit;
+}
+
+@font-face {
+    font-family: 'AvenirNext-UltraLight';
+    src: url('./AvenirNext-UltraLight.ttf') format('truetype');
+    font-weight: inherit;
+    font-style: inherit;
+}
+
+@font-face {
+    font-family: 'AvenirNextCondensed-Regular';
+    src: url('./AvenirNextCondensed-Regular.ttf') format('truetype');
+    font-weight: inherit;
+    font-style: inherit;
+}
+
+@font-face {
+    font-family: 'AvenirNextCondensed-UltraLight';
+    src: url('./AvenirNextCondensed-UltraLight.ttf') format('truetype');
+    font-weight: inherit;
+    font-style: inherit;
+}
+
+@font-face {
+    font-family: 'AnnabelleJF-Regular';
+    src: url('./AnnabelleJF-Regular.ttf') format('truetype');
+    font-weight: inherit;
+    font-style: inherit;
+}
+
+@font-face {
+    font-family: 'Alice-Regular';
+    src: url('./Alice-Regular.ttf') format('truetype');
+    font-weight: inherit;
+    font-style: inherit;
+}

@@ -1,0 +1,58 @@
+@import 'material-icons/iconfont/material-icons.css';
+
+:root {
+    --mdc-theme-primary: rgba(2, 208, 150, 1);
+    --mdc-theme-secondary: rgb(0, 222, 234, 0.8);
+    --mdc-theme-background: #ffffff;
+    --mdc-theme-surface: #ffffff;
+    --mdc-theme-on-primary: rgb(92, 105, 106);
+    --mdc-theme-on-secondary: #ffffff;
+    --mdc-theme-on-surface: rgb(92, 105, 106);
+    --mdc-theme-outline: #e0e0e0;
+  }
+  
+  outline-segmented-button {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    background: var(--mdc-theme-surface);
+    color: var(--mdc-theme-primary);
+    cursor: pointer;
+    outline: none;
+    transition: background 0.3s, border-color 0.3s, color 0.3s;
+    font-size: 10pt;
+  }
+  
+  outline-segmented-button:hover {
+    color: var(--mdc-theme-on-primary);
+    border-color: var(--mdc-theme-on-primary);
+  }
+  
+  outline-segmented-button:active, outlined-segmented-button.active {
+    background: var(--mdc-theme-secondary);
+    color: var(--mdc-theme-on-secondary);
+    border-color: var(--mdc-theme-secondary);
+  }
+  
+  outline-segmented-button-set {
+    display: flex;
+    gap: 8px;
+  }
+
+  outline-segmented-button a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+  }
+
+  .material-icons {
+    font-size: 15pt;
+    margin-right: 8px;
+  }
+
+  .material-icons.power-button {
+    margin: 0;
+  }

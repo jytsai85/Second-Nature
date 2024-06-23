@@ -1,0 +1,43 @@
+@import '../../fonts/fonts.css';
+
+span.decorate-type-1 {
+    font-family: 'AnnabelleJF-Regular';
+    letter-spacing: 5pt;
+}
+
+span.decorate-type-2 {
+    font-family: 'AvenirNextCondensed-UltraLight';
+}
+
+h1#title {
+    font-family: 'AvenirNext-UltraLight';
+    padding-left: 20px;
+}
+
+.Navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    padding-bottom: 10px;
+    background-color: rgb(255, 255, 255);
+    color: rgba(2, 208, 150, 1);
+}
+
+.menu-buttons {
+    padding-right: 20px;
+}
+
+/* Mobile size */
+@media screen and (max-width: 400px) {
+    
+}
+
+/* Tablet size */
+@media screen and (min-width: 400px) and (max-width: 920px) {
+}
+
+/* Desktop size */
+@media screen and (min-width: 920px) {
+}
