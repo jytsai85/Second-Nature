@@ -12,6 +12,11 @@ const Stepper = ({ currentStep, setCurrentStep, complete, setComplete }) => {
     };
     const navigate = useNavigate();
 
+    const resetStepper = () => {
+        setCurrentStep(1);
+        setComplete(false);
+    }
+
     return (
         <div className="Stepper">
             <div className="steps-container">
@@ -29,9 +34,10 @@ const Stepper = ({ currentStep, setCurrentStep, complete, setComplete }) => {
 
             <div className="accomplish-btn">
                 {/* state changes on button click; disable the button when complete */}
-                {complete ? (<button className="btn" onClick={() => {navigate('/setting') }}>Set a new goal</button>) :
-                    (<button className="btn" onClick={() => {currentStep === steps.length ? setComplete(true) :
-                            setCurrentStep((prev) => prev + 1);
+                {complete ? (<button className="btn" onClick={() => { resetStepper(); navigate('/setting') }}>Set a new goal</button>) :
+                    (<button className="btn" onClick={() => {
+                        currentStep === steps.length ? setComplete(true) :
+                        setCurrentStep((prev) => prev + 1);
                     }}>Accomplish</button>)}</div>
         </div>
     );

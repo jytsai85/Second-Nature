@@ -27,3 +27,15 @@ a {
 a:hover {
     color: rgb(92, 105, 106);
 }
+
+/* (responsive) mobile size */
+@media screen and (max-width: 430px) {
+    .contact {
+        height: 70px;
+    }
+
+    .author {
+        bottom: 5%;
+        left: 10%;
+    }
+}

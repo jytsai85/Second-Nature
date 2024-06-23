@@ -31,13 +31,17 @@ h1#title {
 
 /* Mobile size */
 @media screen and (max-width: 400px) {
-    
+    .Navbar {
+        height: 20vh;
+    }
+
+    .menu-buttons {
+        padding-left: 10px;
+    }
 }
 
 /* Tablet size */
-@media screen and (min-width: 400px) and (max-width: 920px) {
-}
+@media screen and (min-width: 400px) and (max-width: 920px) {}
 
 /* Desktop size */
-@media screen and (min-width: 920px) {
-}
+@media screen and (min-width: 920px) {}

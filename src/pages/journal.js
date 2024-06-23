@@ -19,7 +19,7 @@ const Journal = ({ userInfo, currentStep, setCurrentStep, complete, setComplete 
                                     {complete && <h1 className="congrats">and...congratulations!<br></br>You DID it!!! 🥹 🎉 ❤️</h1>}
                                 </div>
                             ))
-                        ) : (<p>No user information available.</p>
+                        ) : (<p className="no-info">No user information available.</p>
                         )}
                     </div>
                 </div>

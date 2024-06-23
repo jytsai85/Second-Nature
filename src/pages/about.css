@@ -13,6 +13,7 @@ img#banner-art {
     height: 70vh;
     position: relative;
     text-align: center;
+    overflow-x: hidden;
 }
 
 .title {
@@ -96,6 +97,7 @@ span.quote {
 
 span.blockquote {
     color: #ffffff;
+    z-index: 1;
 
 }
 
@@ -130,19 +132,55 @@ span.blockquote {
 
 }
 
-@media screen and (max-width: 400px) {}
+/* (responsive) mobile size */
+@media screen and (max-width: 430px) {
+    .about-container {
+        min-height: 130vh;
+    }
 
-@media screen and (min-width: 400px) and (max-width: 920px) {
+    .banner {
+        height: 50vh;
+    }
+
     .title {
-        font-size: 80pt;
+        font-size: 50pt;
     }
 
     img.N {
         margin-left: -20px;
+        width: 60%;
     }
 
     span.decorative-type {
-        margin-left: -8vh;
+        margin-left: -4vh;
+    }
+
+    .blockquote-icon {
+        top: 76%;
+    }
+
+    .blockquoteWithStyle {
+        height: 16vh;
+        padding-right: 20px;
+    }
+}
+
+/* (responsive) tablet size*/
+@media screen and (min-width: 431px) and (max-width: 1024px) {
+    .about-container {
+        min-height: 125vh;
+    }
+    .title {
+        font-size: 100pt;
+    }
+
+    img.N {
+        margin-left: -20px;
+        width: 60%;
+    }
+
+    span.decorative-type {
+        margin-left: -5vh;
     }
 
     .blockquote-icon {
@@ -153,5 +191,3 @@ span.blockquote {
         margin: auto 40px auto 40px;
     }
 }
-
-@media screen and (min-width: 920px) and (max-width: 1400px) {}

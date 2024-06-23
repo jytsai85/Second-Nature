@@ -63,15 +63,6 @@ const Usersettings = ({ userInfo, setUserInfo }) => {
     navigate('/journal');
   };
 
-  const handleReset = (user) => {
-    // reset form fields
-    setName(userInfo.length > 0 ? userInfo[0].name : '');
-    setGoal(userInfo.length > 0 ? userInfo[0].goal : '');
-    setTreat1(userInfo.length > 0 ? userInfo[0].treat1 : '');
-    setTreat2(userInfo.length > 0 ? userInfo[0].treat2 : '');
-    setFinalAward(userInfo.length > 0 ? userInfo[0].finalAward : '');
-  };
-
   const handleClearForm = () => {
     setUserInfo([]);
   };
@@ -81,8 +72,16 @@ const Usersettings = ({ userInfo, setUserInfo }) => {
   }
 
   const handleCancel = () => {
-    // cancel edit mode
     setEditMode(false);
+  }
+
+  const handleReset = () => {
+    // reset form fields
+    setName(userInfo.length > 0 ? userInfo[0].name : '');
+    setGoal(userInfo.length > 0 ? userInfo[0].goal : '');
+    setTreat1(userInfo.length > 0 ? userInfo[0].treat1 : '');
+    setTreat2(userInfo.length > 0 ? userInfo[0].treat2 : '');
+    setFinalAward(userInfo.length > 0 ? userInfo[0].finalAward : '');
   };
 
   return (
@@ -103,19 +102,20 @@ const Usersettings = ({ userInfo, setUserInfo }) => {
             {!editMode && (
               <>
                 <button className="btn userBtn" type="submit">Save</button>
-                <button className="btn userBtn" type="reset">Reset</button>
+                {userInfo.length > 0 && (
+                  <button className="btn userBtn" type="button" onClick={handleEdit}>Edit</button>
+                )}
                 <button className="btn userBtn" type="button" onClick={handleClearForm}>Clear</button>
               </>
             )}
             {editMode && (
               <>
                 <button className="btn userBtn" id="edit-save-btn" type="button" onClick={saveInfo}>Save</button>
-                <button className="btn userBtn" type="button" onClick={handleCancel}>Cancel</button>
+                <button className="btn userBtn" type="reset" onClick={handleReset}>Reset</button>
+                {userInfo.length > 0 && (<button className="btn userBtn" type="button" onClick={handleCancel}>Cancel</button>)}
               </>
             )}
-            {userInfo.length > 0 && (
-              <button className="btn userBtn" type="button" onClick={handleEdit}>Edit</button>
-            )}</div>
+          </div>
         </div>
       </div>
     </div >

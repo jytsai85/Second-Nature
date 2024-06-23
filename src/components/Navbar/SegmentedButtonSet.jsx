@@ -20,17 +20,19 @@ const SegmentedButtonSet = () => {
     }, [currentLocation]);
 
     return (
-        <outline-segmented-button-set ref={segmentedButtonSetRef}>
-            <outline-segmented-button value="/">
-                <NavLink to="/" className={({ isActive }) => (isActive ? 'active' : '')}>
-                    <span className="material-icons">home</span>Home</NavLink></outline-segmented-button>
-            <outline-segmented-button value="/journal">
-                <NavLink to="/journal" className={({ isActive }) => (isActive ? 'active' : '')}>
-                    <span className="material-icons">edit_note</span>Journal</NavLink></outline-segmented-button>
-            <outline-segmented-button value="/setting">
-                <NavLink to="/setting" className={({ isActive }) => (isActive ? 'active' : '')}>
-                    <span className="material-icons">manage_accounts</span>Settings</NavLink></outline-segmented-button>
-        </outline-segmented-button-set>
+        <div className="SegmentedButtonSet">
+            <outline-segmented-button-set ref={segmentedButtonSetRef}>
+                <outline-segmented-button value="/">
+                    <NavLink to="/" className={({ isActive }) => (isActive ? 'active' : '')}>
+                        <span className="material-icons">home</span>Home</NavLink></outline-segmented-button>
+                <outline-segmented-button value="/journal">
+                    <NavLink to="/journal" className={({ isActive }) => (isActive ? 'active' : '')}>
+                        <span className="material-icons">edit_note</span>Journal</NavLink></outline-segmented-button>
+                <outline-segmented-button value="/setting">
+                    <NavLink to="/setting" className={({ isActive }) => (isActive ? 'active' : '')}>
+                        <span className="material-icons">manage_accounts</span>Settings</NavLink></outline-segmented-button>
+            </outline-segmented-button-set>
+        </div>
     );
 };
 

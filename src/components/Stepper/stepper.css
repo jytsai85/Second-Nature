@@ -85,10 +85,11 @@ button.btn:hover {
 }
 
 /* Mobile size */
-@media screen and (max-width:400px) {}
+@media screen and (max-width:430px) {
+    .steps-container {
+        height: 50vh;
+    }
+}
 
 /* Tablet size */
-@media screen and (min-width: 400px) and (max-width: 920px) {}
-
-/* Desktop size */
-@media screen and (min-width: 920px) and (max-width: 1400px) {}
+@media screen and (min-width: 431px) and (max-width: 1024px) {}
